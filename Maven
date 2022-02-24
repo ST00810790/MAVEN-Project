@@ -1,0 +1,35 @@
+What is Maven and its usage?
+
+Maven is a build automation tool.Mainly for Java Project.
+Maven based on the concept of Project Object Mdel(POM).
+Maven stores Libraries and plugins in a central repository.
+
+How to create Maven Project?
+
+In commmand prompt:
+1.Open Command Prompt.Select the folder
+   using the command: cd foldername
+2.add the commmand:
+   mvn archetype:generate -DgroupId=com.bharath -DartifactId=Demomaven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+Project folder created
+
+Commands in maven:
+1.Deploys the packaged JAR/ WAR file to the local repository
+      mvn install
+2.To run java program
+     java -cp target/demomaven-1.0-SNAPSHOT.jar com.swathi.App
+3.cleans the maven project by deleting the target directory
+     mvn clean
+4.Skip the test
+    mvn install -DSkipTests
+
+Maven Life Cycle
+mvn install
+
+process resources--resource copying
+validate--validating
+compile---compiling
+test --testing
+package ---packaging
+install --installation
+deploy --deploying
